@@ -1,0 +1,1 @@
+Powershell -noprofile -executionpolicy bypass -file "config.ps1"

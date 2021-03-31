@@ -1,0 +1,1 @@
+New-Item -ItemType Junction -Path "C:\Users\$env:USERNAME\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup" -Name "autohotkey.lnk" -Target {autohotkey} -Force
