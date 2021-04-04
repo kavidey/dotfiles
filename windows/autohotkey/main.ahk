@@ -8,10 +8,13 @@ DetectHiddenWindows, On
 #IfWinExist ahk_exe Spotify.exe
 Ctrl & Media_Next::
 WingetActiveTitle, current_window
-WinKill ahk_exe Spotify.exe
+WinClose, ahk_exe Spotify.exe
+Sleep 50
 Run, %A_AppData%\Spotify\Spotify.exe
 WinWait, ahk_exe Spotify.exe
 WinActivate, ahk_exe Spotify.exe
+Sleep 10
 Send, {Space}
+WinMinimize, ahk_exe Spotify.exe
 WinActivate, "%current_window%"
 return
