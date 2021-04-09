@@ -7,14 +7,19 @@ DetectHiddenWindows, On
 ; Restart Spotify and play the next song
 #IfWinExist ahk_exe Spotify.exe
 Ctrl & Media_Next::
+; Get the currently active window
 WingetActiveTitle, current_window
-WinClose, ahk_exe Spotify.exe
-Sleep 50
+
+; Kill Spotify
+Process, Close, Spotify.exe
+
+; Start, activate and play the current song on spotify
 Run, %A_AppData%\Spotify\Spotify.exe
 WinWait, ahk_exe Spotify.exe
 WinActivate, ahk_exe Spotify.exe
-Sleep 10
 Send, {Space}
+
+; Minimize spotify and activate the old app
 WinMinimize, ahk_exe Spotify.exe
 WinActivate, "%current_window%"
 return
