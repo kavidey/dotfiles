@@ -17,7 +17,7 @@ Process, Close, Spotify.exe
 Run, %A_AppData%\Spotify\Spotify.exe
 WinWait, ahk_exe Spotify.exe
 WinActivate, ahk_exe Spotify.exe
-Send, {Space}
+Send, Media_Play_Pause
 
 ; Minimize spotify and activate the old app
 WinMinimize, ahk_exe Spotify.exe
