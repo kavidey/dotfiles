@@ -6,6 +6,11 @@ echo "Installation script"
 # Install brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+# Homebrew Autoupdate
+brew tap homebrew/autoupdate
+mkdir -p ~/Library/LaunchAgents
+brew autoupdate start 86400 --upgrade --cleanup
+
 # Browsers
 brew install google-chrome
 brew install firefox
@@ -17,16 +22,15 @@ brew install spotify
 brew install iina
 brew install keka
 brew install nordvpn
-brew install activity-watch
-brew install balena-etcher
+brew install activitywatch
+brew install balenaetcher
 brew install gpg-suite
-brew install encrypto
 brew install rectangle
 brew install sensei
 brew install steam
 brew install alfred
 brew install bartender
-brew install syncthing
+brew install homebrew/cask/syncthing
 brew install zerotier-one
 
 # Communication
@@ -48,14 +52,17 @@ brew install notion
 brew install iterm2
 brew install paw
 brew install visual-studio-code
-brew install docker
+brew install homebrew/cask/docker
 brew install anaconda
-brew install dash
+brew install homebrew/cask/dash
 brew install parallels
 brew install mplab-xc16
 
 ### mas (Mac App Store) ###
 brew install mas
+
+read  -n 1 -p "Press any key once you have signed into the App Store: " foo
+echo ""
 
 mas install 497799835 # Xcode
 
