@@ -58,6 +58,9 @@ brew install homebrew/cask/dash
 brew install parallels
 brew install mplab-xc16
 
+brew tap microsoft/git
+brew install --cask git-credential-manager-core
+
 ### mas (Mac App Store) ###
 brew install mas
 
