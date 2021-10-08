@@ -19,3 +19,5 @@ mas install 935235287 # Encrypto
 mas install 1462114288 # Grammarly for Safari
 
 mas install 1472432422 # Wayback machine for Safari
+
+# Add Keynote

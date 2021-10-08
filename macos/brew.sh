@@ -29,6 +29,7 @@ brew install alfred
 brew install bartender
 brew install homebrew/cask/syncthing
 brew install zerotier-one
+brew install dropzone
 
 # Communication
 brew install signal
@@ -38,9 +39,9 @@ brew install discord
 
 # Productivity
 brew install adobe-creative-cloud
-brew install microsoft-office
+brew install microsoft-office # Switch to MAS for this ?
 brew install blender
-brew install grammarly
+# brew install grammarly (This just installs hte destop version, need the beta version)
 brew install obs
 brew install parsec
 brew install notion
