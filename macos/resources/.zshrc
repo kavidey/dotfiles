@@ -79,7 +79,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting nvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -117,3 +117,20 @@ if [ -x "$(command -v exa)" ]; then
     alias ls="exa"
     alias la="exa --long --all --group"
 fi
+
+# ROS Configurations (https://docs.ros.org/en/galactic/Installation/macOS-Development-Setup.html)
+export OPENSSL_ROOT_DIR=/usr/local/opt/openssl@3
+
+export CMAKE_PREFIX_PATH=$CMAKE_PREFIX_PATH:/usr/local/opt/qt@5
+export PATH=$PATH:/usr/local/opt/qt@5/bin
+
+export PATH=$PATH:$HOME/Library/Python/3.9/bin
+
+source ~/ros2_galactic/install/local_setup.zsh
+source /usr/local/share/colcon_cd/function/colcon_cd.sh
+source /usr/local/share/colcon_argcomplete/hook/colcon-argcomplete.zsh
+
+export ROS_DOMAIN_ID=0
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

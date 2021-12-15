@@ -7,3 +7,5 @@ echo "Installation script"
 ./mas.sh
 
 ./zsh.sh
+
+./custom.sh

@@ -12,12 +12,13 @@ brew autoupdate start 86400 --upgrade --cleanup
 brew install google-chrome
 brew install firefox
 brew install tor-browser
+brew install brave-browser
 
 # Common Apps
 brew install authy
 brew install spotify
 brew install iina
-brew install keka
+brew install keka # separate app to set it as default file uncompressor
 brew install nordvpn
 brew install activitywatch
 brew install balenaetcher
@@ -30,6 +31,16 @@ brew install bartender
 brew install homebrew/cask/syncthing
 brew install zerotier-one
 brew install dropzone
+brew install little-snitch
+#brew install superpowered
+#brew install coherence / unite
+#brew install pdf-squeezer (switch to mac app store?)
+brew install imageoptim
+brew install youtube-dl
+brew install numi
+# houdini
+brew install todoist
+brew install lunar
 
 # Communication
 brew install signal
@@ -58,6 +69,10 @@ brew install mplab-xc16
 brew install tree
 brew install wget
 brew install exa
+# brew install lunacy
+brew install android-studio
+brew install sf-symbols
+brew install p7zip
 
 brew tap microsoft/git
 brew install --cask git-credential-manager-core
