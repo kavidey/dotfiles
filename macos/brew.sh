@@ -19,7 +19,6 @@ brew install authy
 brew install spotify
 brew install iina
 brew install keka # separate app to set it as default file uncompressor
-brew install nordvpn
 brew install activitywatch
 brew install balenaetcher
 brew install gpg-suite
@@ -41,6 +40,7 @@ brew install numi
 # houdini
 brew install todoist
 brew install lunar
+brew install viscosity
 
 # Communication
 brew install signal
