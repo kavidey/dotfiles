@@ -24,3 +24,4 @@ mas install 1472432422 # Wayback machine for Safari
 # Add davinci resolve
 # add spark email
 # add fantastical
+# add parcel

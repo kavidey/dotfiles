@@ -41,6 +41,7 @@ brew install numi
 brew install todoist
 brew install lunar
 brew install viscosity
+brew install scriptable
 
 # Communication
 brew install signal
@@ -73,6 +74,7 @@ brew install exa
 brew install android-studio
 brew install sf-symbols
 brew install p7zip
+brew install nmap
 
 brew tap microsoft/git
 brew install --cask git-credential-manager-core

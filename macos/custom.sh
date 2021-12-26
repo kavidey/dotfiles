@@ -9,3 +9,4 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 # install neat video
 # vc color vibrance
 # izotope
+# scriptable https://scriptable.app/mac-beta/

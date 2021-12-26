@@ -137,3 +137,5 @@ export NVM_DIR="$HOME/.nvm"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+# Brew Setting
+export PATH="/usr/local/sbin:$PATH"
