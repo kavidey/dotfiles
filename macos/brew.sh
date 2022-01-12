@@ -42,6 +42,9 @@ brew install todoist
 brew install lunar
 brew install viscosity
 brew install scriptable
+brew install onyx
+brew install tldr
+brew install detexify
 
 # Communication
 brew install signal
@@ -75,6 +78,7 @@ brew install android-studio
 brew install sf-symbols
 brew install p7zip
 brew install nmap
+brew install kicad
 
 brew tap microsoft/git
 brew install --cask git-credential-manager-core

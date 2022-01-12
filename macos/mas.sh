@@ -25,3 +25,5 @@ mas install 1472432422 # Wayback machine for Safari
 # add spark email
 # add fantastical
 # add parcel
+
+# add https://github.com/quoid/userscripts
