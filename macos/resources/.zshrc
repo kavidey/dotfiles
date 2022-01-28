@@ -1,3 +1,8 @@
+
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the start of this file.
+[ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
+#### END FIG ENV VARIABLES ####
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -112,6 +117,9 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# Disable autocorrect for specific things
+CORRECT_IGNORE_FILE="tests|.ssh|.docker"
+
 # `exa` instead of `ls`
 if [ -x "$(command -v exa)" ]; then
     alias ls="exa"
@@ -128,7 +136,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 export PATH="/usr/local/sbin:$PATH"
 
 # ROS
-source ros.sh
+# source ./ros.sh
 
 # Microchip
 export PATH="$PATH:"/Applications/microchip/xc16/v1.70/bin""
@@ -147,3 +155,7 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the end of this file.
+[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
+#### END FIG ENV VARIABLES ####
