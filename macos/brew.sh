@@ -45,6 +45,16 @@ brew install scriptable
 brew install onyx
 brew install tldr
 brew install detexify
+brew install disk-drill
+brew install path-finder
+brew install default-folder-x
+brew install google-drive
+brew install karabiner-elements
+brew install folx
+brew install mem
+brew install daisydisk
+brew install timemator
+# display pilot for benq monitor
 
 # Communication
 brew install signal
@@ -70,7 +80,6 @@ brew install anaconda
 brew install homebrew/cask/dash
 brew install parallels
 brew install mplab-xc16
-brew install tree
 brew install wget
 brew install exa
 # brew install lunacy
@@ -79,6 +88,11 @@ brew install sf-symbols
 brew install p7zip
 brew install nmap
 brew install kicad
+brew install htop
+brew install php
+brew install bitwarden-cli
+brew install speedtest-cli
+brew install fig
 
 brew tap microsoft/git
 brew install --cask git-credential-manager-core
