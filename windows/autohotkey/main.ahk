@@ -17,9 +17,14 @@ Process, Close, Spotify.exe
 Run, %A_AppData%\Spotify\Spotify.exe
 WinWait, ahk_exe Spotify.exe
 WinActivate, ahk_exe Spotify.exe
-Send, Media_Play_Pause
+Send, {Space}
 
 ; Minimize spotify and activate the old app
-WinMinimize, ahk_exe Spotify.exe
+WinMinimize, ahk_exe Spotify.exe ; replace with CMD-M?
 WinActivate, "%current_window%"
 return
+
+; VS Code: swap ESC and Capslock
+#IfWinActive ahk_exe Code.exe 
+$Capslock::Esc
+$Esc::Capslock
