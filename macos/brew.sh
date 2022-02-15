@@ -55,6 +55,7 @@ brew install mem
 brew install daisydisk
 brew install timemator
 # display pilot for benq monitor
+brew install soulver
 
 # Communication
 brew install signal
@@ -93,6 +94,7 @@ brew install php
 brew install bitwarden-cli
 brew install speedtest-cli
 brew install fig
+brew install --cask termius
 
 brew tap microsoft/git
 brew install --cask git-credential-manager-core

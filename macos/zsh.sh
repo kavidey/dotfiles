@@ -11,8 +11,8 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 
-wget https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/FiraCode/Medium/complete/Fira%20Code%20Medium%20Nerd%20Font%20Complete.ttf
-ln resources/Fira\ Code\ Medium\ Nerd\ Font\ Complete.ttf ~/Library/Fonts/Fira\ Code\ Medium\ Nerd\ Font\ Complete.ttf
+# wget https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/FiraCode/Medium/complete/Fira%20Code%20Medium%20Nerd%20Font%20Complete.ttf
+# ln resources/Fira\ Code\ Medium\ Nerd\ Font\ Complete.ttf ~/Library/Fonts/Fira\ Code\ Medium\ Nerd\ Font\ Complete.ttf
 
 # ZSH Plugins
 # Auto suggestions
