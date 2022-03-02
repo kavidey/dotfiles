@@ -95,7 +95,6 @@ brew install bitwarden-cli
 brew install speedtest-cli
 brew install fig
 brew install --cask termius
-brew install clion
 
 brew tap microsoft/git
 brew install --cask git-credential-manager-core
