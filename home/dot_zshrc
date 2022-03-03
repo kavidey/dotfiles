@@ -84,7 +84,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting nvm)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-nvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -126,17 +126,15 @@ if [ -x "$(command -v exa)" ]; then
     alias la="exa --long --all --group"
 fi
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# NVM Setup
+#export NVM_DIR="$HOME/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # Brew Setting
 export PATH="/usr/local/sbin:$PATH"
-
-# ROS
-# source ./ros.sh
 
 # Microchip
 export PATH="$PATH:"/Applications/microchip/xc16/v1.70/bin""
