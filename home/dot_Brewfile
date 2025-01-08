@@ -140,6 +140,8 @@ cask "1password-cli"
 cask "adobe-creative-cloud"
 # AirPods companion app
 cask "airbuddy"
+# Chromium based browser
+cask "arc"
 # Menu bar icon organiser
 cask "bartender"
 # Universal chat app powered by Matrix
@@ -148,6 +150,8 @@ cask "beeper"
 cask "cleanshot"
 # Image, video and clipboard optimiser
 cask "clop"
+# Track and budget money
+cask "copilot"
 # Disk space visualiser
 cask "daisydisk"
 # Browser for SQLite databases
@@ -156,6 +160,8 @@ cask "db-browser-for-sqlite"
 cask "detexify"
 # All-in-one toolbox for developers
 cask "devutils"
+# Voice and text chat software
+cask "discord"
 # Data recovery software
 cask "disk-drill"
 # Font editor and converter for outline and bitmap fonts
@@ -237,6 +243,8 @@ cask "sf-symbols"
 cask "signal"
 # Team communication and collaboration software
 cask "slack"
+# Open source cross-platform file explorer
+cask "spacedrive"
 # Video game digital distribution service
 cask "steam"
 # Real time file synchronisation software
