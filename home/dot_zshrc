@@ -1,5 +1,3 @@
-# Fig pre block. Keep at the top of this file.
-. "$HOME/.fig/shell/zshrc.pre.zsh"
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -117,10 +115,10 @@ source $ZSH/oh-my-zsh.sh
 # Disable autocorrect for specific things
 CORRECT_IGNORE_FILE="tests|.ssh|.docker"
 
-# `exa` instead of `ls`
-if [ -x "$(command -v exa)" ]; then
-    alias ls="exa"
-    alias la="exa --long --all --group"
+# `eza` instead of `ls`
+if [ -x "$(command -v eza)" ]; then
+    alias ls="eza"
+    alias la="eza --long --all --group"
 fi
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
@@ -134,5 +132,46 @@ export PATH="$PATH:"/Applications/microchip/xc16/v1.70/bin""
 # PyEnv setup
 eval "$(pyenv init -)"
 
-# Fig post block. Keep at the bottom of this file.
-. "$HOME/.fig/shell/zshrc.post.zsh"
+GITSTATUS_LOG_LEVEL=DEBUG
+
+# Ruby
+export PATH=/opt/homebrew/lib/ruby/gems/2.7.0/bin:$PATH
+export PATH=/usr/local/lib/ruby/gems/2.7.0/bin:$PATH
+
+# Android
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# pnpm
+export PNPM_HOME="/Users/kavidey/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+
+# VCPKG
+export VCPKG_ROOT="$HOME/vcpkg"
+
+# ZFunc
+fpath+=~/.zfunc
+
+autoload bashcompinit
+bashcompinit
+source /Users/kavidey/vcpkg/scripts/vcpkg_completion.zsh
+source /Users/kavidey/.config/op/plugins.sh
+
+# 1Password
+source ~/.config/op/plugins.sh
+
+# Git Switch SSH <-> HTTPS (https://stackoverflow.com/a/52348042/6454085)
+alias git-https='git remote set-url origin https://github.com/$(git remote get-url origin | sed "s/https:\/\/github.com\///" | sed "s/git@github.com://")'
+alias git-ssh='git remote set-url origin git@github.com:$(git remote get-url origin | sed "s/https:\/\/github.com\///" | sed "s/git@github.com://")'
+
+# Matlab
+export PATH="$PATH:/Applications/MATLAB_R2023b.app/bin"
+
+# zoxide
+eval "$(zoxide init --cmd cd zsh)"
+
+# LLVM
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
