@@ -222,7 +222,6 @@ cask "quarto"
 cask "rapidapi"
 # Control your tools with a few keystrokes
 cask "raycast"
-cask "scansion"
 # IDE for embedded systems
 cask "segger-embedded-studio-for-arm"
 # Monitors the computer system and optimises its performance
