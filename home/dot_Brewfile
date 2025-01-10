@@ -1,14 +1,21 @@
 tap "apple/apple", "http://github.com/apple/homebrew-apple"
 tap "armmbed/formulae"
 tap "chipsalliance/verible"
+tap "homebrew/aliases"
 tap "homebrew/autoupdate"
 tap "homebrew/bundle"
 tap "homebrew/services"
 tap "hookdeck/hookdeck"
 tap "microsoft/git"
 tap "randomplum/gtkwave"
+# Color management engine supporting ICC profiles
+brew "little-cms2"
+# Image format providing lossless and lossy compression for web images
+brew "webp"
 # Core application library for C
 brew "glib"
+# OpenType text shaping engine
+brew "harfbuzz"
 # Manage your dotfiles across multiple diverse machines, securely
 brew "chezmoi"
 # Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
@@ -19,20 +26,12 @@ brew "cmake"
 brew "curl"
 # Modern, maintained replacement for ls
 brew "eza"
-# OpenType text shaping engine
-brew "harfbuzz"
 # Framework for layout and rendering of i18n text
 brew "pango"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.11"
 # Command-line outline and bitmap font editor/converter
 brew "fontforge", link: false
-# Color management engine supporting ICC profiles
-brew "little-cms2"
 # Library for JPEG-2000 image manipulation
 brew "openjpeg"
-# Image format providing lossless and lossy compression for web images
-brew "webp"
 # Image processing and image analysis library
 brew "leptonica"
 # OCR (Optical Character Recognition) engine
@@ -79,10 +78,12 @@ brew "qt@5"
 brew "pyqt@5"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.10"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
 # Rsync for cloud storage
 brew "rclone"
 # Persistent key-value database, with built-in net interface
-brew "redis", restart_service: true
+brew "redis", restart_service: :changed
 # Utility that provides fast incremental file transfer
 brew "rsync"
 # Rust toolchain installer
@@ -160,8 +161,6 @@ cask "fontforge"
 cask "freecad"
 # Cross-platform Git credential storage for multiple hosting providers
 cask "git-credential-manager"
-# Cross-platform Git credential storage for multiple hosting providers
-cask "git-credential-manager"
 # Git client focusing on productivity
 cask "gitkraken"
 # Open-source video transcoder
@@ -202,6 +201,8 @@ cask "netspot"
 cask "network-radar"
 # Handy utility to manage and customize the notch area
 cask "notchnook"
+# App to write, plan, collaborate, and get organised
+cask "notion"
 # Calendar for professionals and teams
 cask "notion-calendar"
 # Replacement for Docker Desktop
