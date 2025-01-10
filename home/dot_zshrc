@@ -147,16 +147,11 @@ export PNPM_HOME="/Users/kavidey/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
 
-# VCPKG
-export VCPKG_ROOT="$HOME/vcpkg"
-
 # ZFunc
 fpath+=~/.zfunc
 
 autoload bashcompinit
 bashcompinit
-source /Users/kavidey/vcpkg/scripts/vcpkg_completion.zsh
-source /Users/kavidey/.config/op/plugins.sh
 
 # 1Password
 source ~/.config/op/plugins.sh
