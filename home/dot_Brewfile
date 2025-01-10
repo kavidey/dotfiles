@@ -155,12 +155,12 @@ cask "devutils"
 cask "discord"
 # Data recovery software
 cask "disk-drill"
+cask "font-meslo-lg-nerd-font"
+cask "font-sauce-code-pro-nerd-font"
 # Font editor and converter for outline and bitmap fonts
 cask "fontforge"
 # 3D parametric modeller
 cask "freecad"
-# Cross-platform Git credential storage for multiple hosting providers
-cask "git-credential-manager"
 # Git client focusing on productivity
 cask "gitkraken"
 # Open-source video transcoder
@@ -303,6 +303,8 @@ vscode "dbaeumer.vscode-eslint"
 vscode "donjayamanne.githistory"
 vscode "doublebuffer.metal-shader"
 vscode "eamodio.gitlens"
+vscode "equinusocio.vsc-material-theme"
+vscode "equinusocio.vsc-material-theme-icons"
 vscode "esbenp.prettier-vscode"
 vscode "grapecity.gc-excelviewer"
 vscode "gruntfuggly.todo-tree"
