@@ -85,14 +85,8 @@ brew "rclone"
 brew "redis", restart_service: true
 # Utility that provides fast incremental file transfer
 brew "rsync"
-# Powerful, clean, object-oriented scripting language
-brew "ruby@2.7", link: true
 # Rust toolchain installer
 brew "rustup"
-# Display and control your Android device
-brew "scrcpy"
-# Astronomical image processing tool
-brew "siril"
 # SOcket CAT: netcat on steroids
 brew "socat"
 # SOund eXchange: universal sound sample translator
