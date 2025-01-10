@@ -1,3 +1,6 @@
+```bash
+sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply kavidey
+```
 ### Additional Apps
 `x86` Copy of iTerm2 (https://apple.stackexchange.com/a/428769)
 - Duplicate iTerm2 App
