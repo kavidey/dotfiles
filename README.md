@@ -5,12 +5,14 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply kavidey
 1Password Git Plugin
 https://developer.1password.com/docs/cli/shell-plugins/github/
 ```bash
-op signin
+eval $(op signin)
 ```
 ```bash
 op plugin init gh
 ```
 ### Additional Apps
+iTerm Option Key Setup: Profiles -> Edit Profiles -> Keys -> _Natural Text Editing_
+
 `x86` Copy of iTerm2 (https://apple.stackexchange.com/a/428769)
 - Duplicate iTerm2 App
 - Get Info -> Open using Rosetta
