@@ -1,10 +1,6 @@
 tap "apple/apple", "http://github.com/apple/homebrew-apple"
 tap "armmbed/formulae"
-tap "chipsalliance/verible"
-tap "homebrew/aliases"
 tap "homebrew/autoupdate"
-tap "homebrew/bundle"
-tap "homebrew/services"
 tap "hookdeck/hookdeck"
 tap "microsoft/git"
 tap "randomplum/gtkwave"
@@ -116,9 +112,6 @@ brew "wireguard-tools"
 brew "yt-dlp"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
-brew "armmbed/formulae/arm-none-eabi-gcc"
-# SystemVerilog developer tools
-brew "chipsalliance/verible/verible"
 # Hookdeck CLI utility
 brew "hookdeck/hookdeck/hookdeck"
 # GTKWave
@@ -159,8 +152,6 @@ cask "font-meslo-lg-nerd-font"
 cask "font-sauce-code-pro-nerd-font"
 # Font editor and converter for outline and bitmap fonts
 cask "fontforge"
-# 3D parametric modeller
-cask "freecad"
 # Git client focusing on productivity
 cask "gitkraken"
 # Open-source video transcoder
@@ -223,8 +214,6 @@ cask "quarto"
 cask "rapidapi"
 # Control your tools with a few keystrokes
 cask "raycast"
-# IDE for embedded systems
-cask "segger-embedded-studio-for-arm"
 # Monitors the computer system and optimises its performance
 cask "sensei"
 # Tool that provides consistent, highly configurable symbols for apps
@@ -269,7 +258,6 @@ cask "zed"
 cask "zoom"
 # Collect, organise, cite, and share research sources
 cask "zotero"
-mas "1Password for Safari", id: 1569813296
 mas "Amphetamine", id: 937984704
 mas "DaVinci Resolve", id: 571213070
 mas "Developer", id: 640199958
