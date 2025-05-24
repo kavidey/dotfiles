@@ -1,0 +1,12 @@
+[user]
+	email = kaviasher@gmail.com
+	name = kavidey
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIADHe0CTPuPONACoYAPM7e2c4/1KZC5sUMMr+hRCfYIN
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true
+[pull]
+	rebase = true
